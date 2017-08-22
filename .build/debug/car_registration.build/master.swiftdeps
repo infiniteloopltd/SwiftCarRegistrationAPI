@@ -1,5 +1,5 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "e385e47b57a48e656fa97bf8f920e0f0"
-build_time: [556753477, 452524000]
+build_time: [556754038, 853168000]
 inputs:
-  "/Users/fiachreid/swift/car_registration/Sources/car_registration.swift": [556753472, 0]
+  "/Users/fiachreid/swift/car_registration/Sources/car_registration.swift": [556754019, 0]

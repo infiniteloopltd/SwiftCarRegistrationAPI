@@ -23,10 +23,6 @@ extension URLSession {
     }
 }
 
-public struct car_registration {
-
-
-
 public func australia_lookup(registrationNumber: String, state: String, username: String, password: String) -> ([String: Any])
 {
     let url = URL(string: "http://www.regcheck.org.uk/api/json.aspx/CheckAustralia/" + registrationNumber + "/" + state)
@@ -63,5 +59,4 @@ func lookup(url: URL, username: String, password: String) -> ([String: Any]) {
 
     return dictionary!
 
-}
 }
