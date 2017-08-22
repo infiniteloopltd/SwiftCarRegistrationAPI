@@ -23,6 +23,10 @@ extension URLSession {
     }
 }
 
+public func hiThere() -> String {
+  return "Hello from the library!"
+}
+
 public func australia_lookup(registrationNumber: String, state: String, username: String, password: String) -> ([String: Any])
 {
     let url = URL(string: "http://www.regcheck.org.uk/api/json.aspx/CheckAustralia/" + registrationNumber + "/" + state)

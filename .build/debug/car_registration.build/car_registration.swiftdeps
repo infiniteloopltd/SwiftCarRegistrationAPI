@@ -1,5 +1,6 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "hiThere"
 - "australia_lookup"
 - "usa_lookup"
 - "europe_lookup"
@@ -27,6 +28,7 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - "australia_lookup"
 - "europe_lookup"
+- "hiThere"
 - "lookup"
 - "usa_lookup"
 depends-member:
@@ -350,4 +352,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "cce0a9b0d8031954edbb92c79b1019fe"
+interface-hash: "400f554173c8fa4fb640c402f43623ec"
