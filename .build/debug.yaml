@@ -2,7 +2,7 @@ client:
   name: swift-build
 tools: {}
 targets:
-  "test": ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule"]
+  "test": ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule","/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.build/car_registrationTests.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.swiftmodule","/Users/fiachreid/swift/car_registration/.build/debug/car_registrationPackageTests.xctest/Contents/MacOS/car_registrationPackageTests"]
   "main": ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule"]
 default: "main"
 commands: 
@@ -21,4 +21,27 @@ commands:
     is-library: true
     enable-whole-module-optimization: false
     num-threads: "8"
+
+  "<car_registrationTests.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "car_registrationTests"
+    module-output-path: "/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.swiftmodule"
+    inputs: ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule","/Users/fiachreid/swift/car_registration/Tests/car_registrationTests/car_registrationTests.swift"]
+    outputs: ["/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.build/car_registrationTests.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.swiftmodule"]
+    import-paths: ["/Users/fiachreid/swift/car_registration/.build/debug"]
+    temps-path: "/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.build"
+    objects: ["/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.build/car_registrationTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-cache-path","/Users/fiachreid/swift/car_registration/.build/debug/ModuleCache"]
+    sources: ["/Users/fiachreid/swift/car_registration/Tests/car_registrationTests/car_registrationTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<car_registrationPackageTests.test>":
+    tool: shell
+    description: "Linking ./.build/debug/car_registrationPackageTests.xctest/Contents/MacOS/car_registrationPackageTests"
+    inputs: ["/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.build/car_registrationTests.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o"]
+    outputs: ["/Users/fiachreid/swift/car_registration/.build/debug/car_registrationPackageTests.xctest/Contents/MacOS/car_registrationPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L/Users/fiachreid/swift/car_registration/.build/debug","-o","/Users/fiachreid/swift/car_registration/.build/debug/car_registrationPackageTests.xctest/Contents/MacOS/car_registrationPackageTests","-module-name","car_registrationPackageTests","-Xlinker","-bundle","/Users/fiachreid/swift/car_registration/.build/debug/car_registrationTests.build/car_registrationTests.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o"]
 

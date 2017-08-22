@@ -1,12 +1,11 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "australia_lookup"
-- "usa_lookup"
-- "europe_lookup"
-- "lookup"
+- "car_registration"
 provides-nominal:
+- "V16car_registration16car_registration"
 provides-member:
 - ["CSo10URLSession", ""]
+- ["V16car_registration16car_registration", ""]
 - ["CSo10URLSession", "synchronousDataTask"]
 provides-dynamic-lookup:
 depends-top-level:
@@ -25,10 +24,7 @@ depends-top-level:
 - "URLResponse"
 - "URLSession"
 - !private "UnicodeScalarType"
-- "australia_lookup"
-- "europe_lookup"
-- "lookup"
-- "usa_lookup"
+- "car_registration"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchSemaphore"]
 - !private ["Ps9AnyObject", "Encoding"]
@@ -275,6 +271,16 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "setValue"]
 - !private ["Ps22_RandomAccessIndexable", "base64EncodedString"]
 - !private ["Ps26_RangeReplaceableIndexable", "base64EncodedString"]
+- !private ["V16car_registration16car_registration", "JSONSerialization"]
+- ["V16car_registration16car_registration", "String"]
+- ["V16car_registration16car_registration", "URL"]
+- !private ["V16car_registration16car_registration", "URLRequest"]
+- !private ["V16car_registration16car_registration", "URLSession"]
+- ["V16car_registration16car_registration", "australia_lookup"]
+- ["V16car_registration16car_registration", "europe_lookup"]
+- ["V16car_registration16car_registration", "init"]
+- ["V16car_registration16car_registration", "lookup"]
+- ["V16car_registration16car_registration", "usa_lookup"]
 depends-nominal:
 - !private "Ps9AnyObject"
 - !private "Ps23BidirectionalCollection"
@@ -335,6 +341,7 @@ depends-nominal:
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps22_RandomAccessIndexable"
 - !private "Ps26_RangeReplaceableIndexable"
+- "V16car_registration16car_registration"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
@@ -350,4 +357,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "cce0a9b0d8031954edbb92c79b1019fe"
+interface-hash: "1f4a3f33f0f210927c985a6c31a924fa"
