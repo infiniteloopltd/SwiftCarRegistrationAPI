@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/master.swiftdeps"
+  },
+  "/Users/fiachreid/swift/car_registration/Sources/car_registration.swift": {
+    "dependencies": "/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.d",
+    "object": "/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o",
+    "swiftmodule": "/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration~partial.swiftmodule",
+    "swift-dependencies": "/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swiftdeps"
+  }
+}

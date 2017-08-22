@@ -1,0 +1,24 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule"]
+  "main": ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule"]
+default: "main"
+commands: 
+  "<car_registration.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "car_registration"
+    module-output-path: "/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule"
+    inputs: ["/Users/fiachreid/swift/car_registration/Sources/car_registration.swift"]
+    outputs: ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o","/Users/fiachreid/swift/car_registration/.build/debug/car_registration.swiftmodule"]
+    import-paths: ["/Users/fiachreid/swift/car_registration/.build/debug"]
+    temps-path: "/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build"
+    objects: ["/Users/fiachreid/swift/car_registration/.build/debug/car_registration.build/car_registration.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-cache-path","/Users/fiachreid/swift/car_registration/.build/debug/ModuleCache"]
+    sources: ["/Users/fiachreid/swift/car_registration/Sources/car_registration.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
