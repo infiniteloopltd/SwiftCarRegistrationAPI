@@ -1,5 +1,7 @@
 # SwiftCarRegistrationAPI
+
 A wrapper for the Car Registration API in Swift. You will require a username and password from http://www.vehicleregistrationapi.com
+This API returns car details from a car number plate in many countries worldwide, including the UK, USA, Australia, India. A full list is shown below.
 
 ## Usage
 
