@@ -17,6 +17,7 @@ let package = Package(
 )
 ````
 
+main.swift
 ```swift
 import car_registration
 print(hiThere())
@@ -25,3 +26,38 @@ let dict = australia_lookup(registrationNumber: "YHC14Y", state: "NSW", username
 
 print(dict["Description"] ?? "error");
 ```
+
+Other members of the car_registration package are 
+* australia_lookup
+* usa_lookup
+* europe_lookup
+
+Both australia and usa accept four parameters, registrationNumber, state, username and password, and returns a [String: Any]
+europe_lookup does not require the state parameter, but instead, requires a endpoint parameter, which can be one of the following strings;
+
+* Check (UK)
+* CheckBelgium 
+* CheckCroatia 
+* CheckCzechRepublic 
+* CheckDenmark 
+* CheckEstonia 
+* CheckFinland 
+* CheckFrance 
+* CheckHungary 
+* CheckIndia 
+* CheckIreland 
+* CheckItaly 
+* CheckNetherlands 
+* CheckNewZealand 
+* CheckNigeria 
+* CheckNorway 
+* CheckPortugal 
+* CheckRussia 
+* CheckSlovakia 
+* CheckSouthAfrica 
+* CheckSpain 
+* CheckSriLanka 
+* CheckSweden 
+* CheckUAE 
+* CheckUSA 
+* CheckAustralia
