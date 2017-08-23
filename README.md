@@ -22,7 +22,6 @@ let package = Package(
 main.swift
 ```swift
 import car_registration
-print(hiThere())
 
 let dict = australia_lookup(registrationNumber: "YHC14Y", state: "NSW", username:"***your username***", password:"*** password ***")
 
